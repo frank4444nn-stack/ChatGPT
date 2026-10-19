@@ -1,0 +1,72 @@
+SISTEMA DE GESTIÓN DE CARRETERAS — PROYECTO COMPLETADO
+
+ABRIR Y EJECUTAR
+1. Descomprimir todo el ZIP.
+2. Abrir SistemaCarreteras.sln en Visual Studio 2022.
+3. Instalar la carga de trabajo Desarrollo de escritorio de .NET y el
+   Developer Pack/Targeting Pack de .NET Framework 4.7.2 si Visual Studio lo pide.
+4. Seleccionar SistemaCarreteras como proyecto de inicio y pulsar F5.
+No requiere NuGet, SQL Server, claves ni conexión a una base de datos.
+
+ESTRUCTURA DE CLASE
+Entidades: atributos privados, constructores, propiedades y ToString.
+Controladores: clases TLista con List<T> estáticas y métodos de validación/gestión.
+Formularios: CrearObjeto, ValidarDatos, Guardar, setDatos y administradores con
+CargarDatos, Listar, Buscar, Nuevo, Actualizar y Eliminar según corresponda.
+Guardar devuelve DialogResult.OK; el administrador registra el objeto.
+Las filas de los administradores que permiten cambios guardan el objeto en Tag.
+
+OPERACIONES DEL ENUNCIADO
+Categorías: registrar y listar.
+Carreteras: consultar y buscar por código, nombre o categoría.
+Comunas: listar, buscar por nombre/cantón/provincia y eliminar si no hay relaciones.
+Tramos: consultar, filtrar por carretera/número/rango y mostrar longitud.
+Recorridos: insertar, modificar, eliminar y buscar.
+Extremos: insertar, modificar, eliminar y buscar; destino dependiente de confluencia.
+Consultas: las dos detalladas en el PDF y tres complementarias de recorridos/extremos.
+Los formularios frmCarretera, frmComuna y frmTramo también están completados como
+formularios de captura reutilizables; no se añaden botones de alta a sus listados,
+porque esas altas no son operaciones solicitadas por el PDF.
+
+DATOS DE PRUEBA
+TListaDatos.CargarDatos carga una sola vez 5 categorías, 5 carreteras, 6 comunas,
+10 tramos, 15 recorridos y 6 extremos (5 inicios y un final de confluencia).
+Son ejemplos académicos, no cartografía real.
+La comuna 6 no tiene relaciones y se puede eliminar para probar esa operación.
+Carretera 101, tramo 1, orden 2: recorrido sin extremo propio para probar cambios.
+Para eliminar un recorrido usado por extremos, eliminar/modificar primero esos extremos.
+Una carretera puede tener máximo un inicio y un final. Los ejemplos dejan finales
+sin registrar para practicar; los faltantes no se crean automáticamente.
+
+FILTROS
+Tramos > Rango de kilómetros: escribir desde;hasta, por ejemplo 2;8.
+Se muestran los tramos cuyo intervalo intersecta el rango, incluidos sus límites.
+El separador entre límites es punto y coma. Para decimales, usar el separador
+regional de Windows. "Mostrar todas" limpia el filtro.
+En Consultas se seleccionan categoría/carretera/tramo con listas desplegables.
+
+IMPORTANTE SOBRE LOS DATOS
+Se trabaja con varias listas de objetos y LINQ to Objects, como en las prácticas.
+Los cambios solo duran mientras el programa está abierto. Al reiniciar se cargan
+otra vez los ejemplos. No se añadió persistencia ni LINQ to SQL.
+El PDF menciona cinco consultas pero solo detalla dos; las otras tres se identifican
+como complementarias en el documento. Si el docente entrega más páginas, revisar
+esas consultas contra las instrucciones adicionales.
+
+VALIDACIÓN REALIZADA
+Compilación C# sin errores; compilación del proyecto completo mediante Mono/XBuild
+sin errores y con una advertencia del toolset sobre .NET Framework 4.7.2.
+85 comprobaciones aprobadas: datos iniciales, apertura de los 14 formularios,
+filtros, consultas, modificaciones, duplicados, rangos y restricciones de eliminación.
+Pruebas ejecutadas en Linux con Mono y pantalla virtual; no se ejecutó Visual Studio
+sobre Windows en este entorno. Ver Pruebas/Resultados_Mono.txt y Compilacion_Mono.txt.
+Para repetir en Windows, abrir Developer PowerShell para Visual Studio y ejecutar
+el script Pruebas/Ejecutar-Pruebas.ps1. Este script se entrega para Windows,
+pero su ejecución en Windows no se ha verificado aquí.
+
+ENTREGA
+La solución y fuentes completas están dentro de este proyecto.
+El documento Word y el PDF incluyen explicación y el código de los formularios,
+controladores y punto de entrada. Los Designer existentes se conservan en el ZIP;
+se incluye en el documento el Designer nuevo de consultas.
+Los archivos ZIP originales que enviaste permanecen sin modificaciones.

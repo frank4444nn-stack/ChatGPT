@@ -1,0 +1,75 @@
+
+>>>> xbuild tool is deprecated and will be removed in future updates, use msbuild instead <<<<
+
+XBuild Engine Version 14.0
+Mono, Version 6.12.0.199
+Copyright (C) 2005-2013 Various Mono authors
+
+Build started 10/19/2026 17:11:46.
+__________________________________________________
+Project "/workspace/entrega/SistemaCarreteras/SistemaCarreteras/SistemaCarreteras.csproj" (Rebuild target(s)):
+	Target CoreClean:
+		Deleting file '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttribute.cs'
+		Deleting file '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/obj/Debug/SistemaCarreteras.Formularios.frmAdminCarretera.resources'
+		Deleting file '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/obj/Debug/SistemaCarreteras.Formularios.frmadminCategoria.resources'
+		Deleting file '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/obj/Debug/SistemaCarreteras.Formularios.frmAdminComuna.resources'
+		Deleting file '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/obj/Debug/SistemaCarreteras.Formularios.frmAdminComunaRecorrida.resources'
+		Deleting file '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/obj/Debug/SistemaCarreteras.Formularios.frmAdminExtremo.resources'
+		Deleting file '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/obj/Debug/SistemaCarreteras.Formularios.frmAdminTramo.resources'
+		Deleting file '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/obj/Debug/SistemaCarreteras.Formularios.frmCarretera.resources'
+		Deleting file '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/obj/Debug/SistemaCarreteras.Formularios.frmCategoria.resources'
+		Deleting file '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/obj/Debug/SistemaCarreteras.Formularios.frmComuna.resources'
+		Deleting file '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/obj/Debug/SistemaCarreteras.Formularios.frmComunaRecorrida.resources'
+		Deleting file '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/obj/Debug/SistemaCarreteras.Formularios.frmExtremo.resources'
+		Deleting file '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/obj/Debug/SistemaCarreteras.Formularios.frmPrincipal.resources'
+		Deleting file '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/obj/Debug/SistemaCarreteras.Formularios.frmTramo.resources'
+		Deleting file '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/obj/Debug/SistemaCarreteras.Properties.Resources.resources'
+		Deleting file '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/bin/Debug/SistemaCarreteras.exe.config'
+		Deleting file '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/bin/Debug/SistemaCarreteras.exe.mdb'
+		Deleting file '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/bin/Debug/SistemaCarreteras.exe'
+		Deleting file '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/obj/Debug/SistemaCarreteras.exe'
+		Deleting file '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/obj/Debug/SistemaCarreteras.exe.mdb'
+		Deleting file '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/obj/Debug/SistemaCarreteras.csproj.FilesWrittenAbsolute.txt'
+	Target PrepareForBuild:
+		Configuration: Debug Platform: AnyCPU
+	Target GetFrameworkPaths:
+/workspace/toolchain/root/usr/lib/mono/xbuild/14.0/bin/Microsoft.Common.targets:  warning : TargetFrameworkVersion 'v4.7.2' not supported by this toolset (ToolsVersion: 14.0).
+	Target GenerateResources:
+		Tool /workspace/toolchain/root/usr/lib/mono/4.5/resgen.exe execution started with arguments: /useSourcePath /compile "Formularios/frmAdminCarretera.resx,obj/Debug/SistemaCarreteras.Formularios.frmAdminCarretera.resources" 
+		Tool /workspace/toolchain/root/usr/lib/mono/4.5/resgen.exe execution started with arguments: /useSourcePath /compile "Formularios/frmadminCategoria.resx,obj/Debug/SistemaCarreteras.Formularios.frmadminCategoria.resources" 
+		Tool /workspace/toolchain/root/usr/lib/mono/4.5/resgen.exe execution started with arguments: /useSourcePath /compile "Formularios/frmAdminComuna.resx,obj/Debug/SistemaCarreteras.Formularios.frmAdminComuna.resources" 
+		Tool /workspace/toolchain/root/usr/lib/mono/4.5/resgen.exe execution started with arguments: /useSourcePath /compile "Formularios/frmAdminComunaRecorrida.resx,obj/Debug/SistemaCarreteras.Formularios.frmAdminComunaRecorrida.resources" 
+		Tool /workspace/toolchain/root/usr/lib/mono/4.5/resgen.exe execution started with arguments: /useSourcePath /compile "Formularios/frmAdminExtremo.resx,obj/Debug/SistemaCarreteras.Formularios.frmAdminExtremo.resources" 
+		Tool /workspace/toolchain/root/usr/lib/mono/4.5/resgen.exe execution started with arguments: /useSourcePath /compile "Formularios/frmAdminTramo.resx,obj/Debug/SistemaCarreteras.Formularios.frmAdminTramo.resources" 
+		Tool /workspace/toolchain/root/usr/lib/mono/4.5/resgen.exe execution started with arguments: /useSourcePath /compile "Formularios/frmCarretera.resx,obj/Debug/SistemaCarreteras.Formularios.frmCarretera.resources" 
+		Tool /workspace/toolchain/root/usr/lib/mono/4.5/resgen.exe execution started with arguments: /useSourcePath /compile "Formularios/frmCategoria.resx,obj/Debug/SistemaCarreteras.Formularios.frmCategoria.resources" 
+		Tool /workspace/toolchain/root/usr/lib/mono/4.5/resgen.exe execution started with arguments: /useSourcePath /compile "Formularios/frmComuna.resx,obj/Debug/SistemaCarreteras.Formularios.frmComuna.resources" 
+		Tool /workspace/toolchain/root/usr/lib/mono/4.5/resgen.exe execution started with arguments: /useSourcePath /compile "Formularios/frmComunaRecorrida.resx,obj/Debug/SistemaCarreteras.Formularios.frmComunaRecorrida.resources" 
+		Tool /workspace/toolchain/root/usr/lib/mono/4.5/resgen.exe execution started with arguments: /useSourcePath /compile "Formularios/frmExtremo.resx,obj/Debug/SistemaCarreteras.Formularios.frmExtremo.resources" 
+		Tool /workspace/toolchain/root/usr/lib/mono/4.5/resgen.exe execution started with arguments: /useSourcePath /compile "Formularios/frmPrincipal.resx,obj/Debug/SistemaCarreteras.Formularios.frmPrincipal.resources" 
+		Tool /workspace/toolchain/root/usr/lib/mono/4.5/resgen.exe execution started with arguments: /useSourcePath /compile "Formularios/frmTramo.resx,obj/Debug/SistemaCarreteras.Formularios.frmTramo.resources" 
+		Tool /workspace/toolchain/root/usr/lib/mono/4.5/resgen.exe execution started with arguments: /useSourcePath /compile "Properties/Resources.resx,obj/Debug/SistemaCarreteras.Properties.Resources.resources" 
+	Target GenerateSatelliteAssemblies:
+	No input files were specified for target GenerateSatelliteAssemblies, skipping.
+	Target CoreCompile:
+		Tool /workspace/toolchain/root/usr/lib/mono/4.5/mcs.exe execution started with arguments: /noconfig /debug:full /debug:portable /optimize- /out:obj/Debug/SistemaCarreteras.exe /resource:obj/Debug/SistemaCarreteras.Formularios.frmAdminCarretera.resources /resource:obj/Debug/SistemaCarreteras.Formularios.frmadminCategoria.resources /resource:obj/Debug/SistemaCarreteras.Formularios.frmAdminComuna.resources /resource:obj/Debug/SistemaCarreteras.Formularios.frmAdminComunaRecorrida.resources /resource:obj/Debug/SistemaCarreteras.Formularios.frmAdminExtremo.resources /resource:obj/Debug/SistemaCarreteras.Formularios.frmAdminTramo.resources /resource:obj/Debug/SistemaCarreteras.Formularios.frmCarretera.resources /resource:obj/Debug/SistemaCarreteras.Formularios.frmCategoria.resources /resource:obj/Debug/SistemaCarreteras.Formularios.frmComuna.resources /resource:obj/Debug/SistemaCarreteras.Formularios.frmComunaRecorrida.resources /resource:obj/Debug/SistemaCarreteras.Formularios.frmExtremo.resources /resource:obj/Debug/SistemaCarreteras.Formularios.frmPrincipal.resources /resource:obj/Debug/SistemaCarreteras.Formularios.frmTramo.resources /resource:obj/Debug/SistemaCarreteras.Properties.Resources.resources Controladores/TListaDatos.cs Formularios/frmConsultas.cs Formularios/frmConsultas.Designer.cs Controladores/TListaCarretera.cs Controladores/TListaCategoria.cs Controladores/TListaComuna.cs Controladores/TListaComunaRecorrida.cs Controladores/TListaExtremoCarretera.cs Controladores/TListaTramo.cs Entidades/Carretera.cs Entidades/Categoria.cs Entidades/Comuna.cs Entidades/ComunaRecorrida.cs Entidades/ExtremoCarretera.cs Entidades/Tramo.cs Formularios/frmAdminCarretera.cs Formularios/frmAdminCarretera.Designer.cs Formularios/frmadminCategoria.cs Formularios/frmadminCategoria.Designer.cs Formularios/frmAdminComuna.cs Formularios/frmAdminComuna.Designer.cs Formularios/frmAdminComunaRecorrida.cs Formularios/frmAdminComunaRecorrida.Designer.cs Formularios/frmAdminExtremo.cs Formularios/frmAdminExtremo.Designer.cs Formularios/frmAdminTramo.cs Formularios/frmAdminTramo.Designer.cs Formularios/frmCarretera.cs Formularios/frmCarretera.Designer.cs Formularios/frmCategoria.cs Formularios/frmCategoria.Designer.cs Formularios/frmComuna.cs Formularios/frmComuna.Designer.cs Formularios/frmComunaRecorrida.cs Formularios/frmComunaRecorrida.Designer.cs Formularios/frmExtremo.cs Formularios/frmExtremo.Designer.cs Formularios/frmPrincipal.cs Formularios/frmPrincipal.Designer.cs Formularios/frmTramo.cs Formularios/frmTramo.Designer.cs Program.cs Properties/AssemblyInfo.cs Properties/Resources.Designer.cs Properties/Settings.Designer.cs obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttribute.cs /target:winexe /define:"DEBUG;TRACE" /nostdlib /platform:AnyCPU /reference:/workspace/toolchain/root/usr/lib/mono/4.7.2-api/System.dll /reference:/workspace/toolchain/root/usr/lib/mono/4.7.2-api/System.Xml.Linq.dll /reference:/workspace/toolchain/root/usr/lib/mono/4.7.2-api/System.Data.DataSetExtensions.dll /reference:/workspace/toolchain/root/usr/lib/mono/4.7.2-api/Microsoft.CSharp.dll /reference:/workspace/toolchain/root/usr/lib/mono/4.7.2-api/System.Data.dll /reference:/workspace/toolchain/root/usr/lib/mono/4.7.2-api/System.Deployment.dll /reference:/workspace/toolchain/root/usr/lib/mono/4.7.2-api/System.Drawing.dll /reference:/workspace/toolchain/root/usr/lib/mono/4.7.2-api/System.Net.Http.dll /reference:/workspace/toolchain/root/usr/lib/mono/4.7.2-api/System.Windows.Forms.dll /reference:/workspace/toolchain/root/usr/lib/mono/4.7.2-api/System.Xml.dll /reference:/workspace/toolchain/root/usr/lib/mono/4.7.2-api/System.Core.dll /reference:/workspace/toolchain/root/usr/lib/mono/4.7.2-api//mscorlib.dll /warn:4
+	Target _CopyAppConfigFile:
+		Copying file from '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/App.config' to '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/bin/Debug/SistemaCarreteras.exe.config'
+	Target DeployOutputFiles:
+		Copying file from '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/obj/Debug/SistemaCarreteras.exe.mdb' to '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/bin/Debug/SistemaCarreteras.exe.mdb'
+		Copying file from '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/obj/Debug/SistemaCarreteras.exe' to '/workspace/entrega/SistemaCarreteras/SistemaCarreteras/bin/Debug/SistemaCarreteras.exe'
+Done building project "/workspace/entrega/SistemaCarreteras/SistemaCarreteras/SistemaCarreteras.csproj".
+
+Build succeeded.
+
+Warnings:
+
+/workspace/entrega/SistemaCarreteras/SistemaCarreteras/SistemaCarreteras.csproj (Rebuild) ->
+/workspace/toolchain/root/usr/lib/mono/xbuild/14.0/bin/Microsoft.Common.targets (GetFrameworkPaths target) ->
+
+	/workspace/toolchain/root/usr/lib/mono/xbuild/14.0/bin/Microsoft.Common.targets:  warning : TargetFrameworkVersion 'v4.7.2' not supported by this toolset (ToolsVersion: 14.0).
+
+	 1 Warning(s)
+	 0 Error(s)
+
+Time Elapsed 00:00:02.0966620

@@ -1,0 +1,88 @@
+Fontconfig error: No writable cache directories
+Gtk not found (missing LD_LIBRARY_PATH to libgtk-x11-2.0.so.0?), using built-in colorscheme
+OK 1: Carga inicial de categorías
+OK 2: Carga inicial de carreteras
+OK 3: Carga inicial de tramos
+OK 4: Carga inicial de recorridos
+OK 5: Carga inicial de extremos
+OK 6: Extremos de ejemplo válidos
+OK 7: Carga repetida no duplica datos
+OK 8: Abre frmPrincipal
+OK 9: Abre frmadminCategoria
+OK 10: Abre frmAdminCarretera
+OK 11: Abre frmAdminComuna
+OK 12: Abre frmAdminTramo
+OK 13: Abre frmAdminComunaRecorrida
+OK 14: Abre frmAdminExtremo
+OK 15: Abre frmCategoria
+OK 16: Abre frmCarretera
+OK 17: Abre frmComuna
+OK 18: Abre frmTramo
+OK 19: Abre frmComunaRecorrida
+OK 20: Abre frmExtremo
+OK 21: Abre frmConsultas
+OK 22: Menú de carreteras disponible
+OK 23: Listado carreteras
+OK 24: Filtro categoría carretera
+OK 25: Tramos por carretera ordenados
+OK 26: Rango busca intersecciones
+OK 27: Rango inválido no muestra datos anteriores
+OK 28: Fila filtrada mantiene el objeto correcto
+OK 29: setDatos de recorrido conserva selección
+OK 30: Guardar recorrido devuelve OK y objeto nuevo
+OK 31: Formulario no cambia lista antes de aceptar en administrador
+OK 32: setDatos extremo carga cascadas y destino
+OK 33: Final físico desactiva y limpia destino
+OK 34: Final físico crea objeto sin destino
+OK 35: Tramo no se transfiere y calcula longitud
+OK 36: Consulta LINQ 1
+OK 37: Longitud total de carretera suma tramos
+OK 38: Consulta LINQ 2
+OK 39: Consulta LINQ 3
+OK 40: Consulta LINQ 4
+OK 41: Consulta LINQ 5
+OK 42: Categoría rechaza código cero
+OK 43: Categoría única
+OK 44: Carreteras con categoría válida
+OK 45: Rechaza categoría inexistente
+OK 46: Comunas válidas
+OK 47: Mismo número en distintas carreteras
+OK 48: Rechaza número duplicado dentro de carretera
+OK 49: Rechaza longitud cero
+OK 50: Rechaza kilómetro negativo
+OK 51: Rechaza NaN
+OK 52: Rechaza infinito
+OK 53: Comuna en varios tramos
+OK 54: Rechaza orden duplicado
+OK 55: Rechaza entrada mayor a salida
+OK 56: Rechaza salida fuera de tramo
+OK 57: Acepta entrada igual a salida
+OK 58: Edición no pisa otro orden
+OK 59: Edición cambia orden sin perder el registro
+OK 60: Inicio físico sin destino
+OK 61: Un inicio por carretera
+OK 62: Final debe coincidir con límite
+OK 63: Tramo pertenece a carretera indicada
+OK 64: No confluye consigo misma
+OK 65: Confluencia requiere observación
+OK 66: Confluencia valida kilómetro destino
+OK 67: Comuna destino debe ser recorrida
+OK 68: Confluencia válida
+OK 69: No elimina categoría usada
+OK 70: No elimina carretera con tramos
+OK 71: No elimina tramo con relaciones
+OK 72: No elimina comuna recorrida
+OK 73: No elimina recorrido que sostiene extremo
+OK 74: No deja extremo sin cobertura al editar recorrido
+OK 75: Edición rechazada conserva tramo original
+OK 76: Agregar tramo no invalida final registrado
+OK 77: Modificar categoría conserva referencias
+OK 78: Modificar carretera conserva referencias
+OK 79: Modificar comuna conserva referencias
+OK 80: Eliminar extremos
+OK 81: Eliminar recorrido al quitar extremos
+OK 82: Eliminar tramo al liberar relaciones
+OK 83: Eliminar carretera al liberar tramos
+OK 84: Eliminar comuna al liberar relaciones
+OK 85: Abrir pantallas no repone datos eliminados
+TOTAL: 85 pruebas aprobadas.

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F9B813FF-81F8-4C3C-A4CA-14E7F2B2A11C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SistemaCarreteras</RootNamespace>
+    <AssemblyName>SistemaCarreteras</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controladores\TListaDatos.cs" />
+    <Compile Include="Formularios\frmConsultas.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="Formularios\frmConsultas.Designer.cs"><DependentUpon>frmConsultas.cs</DependentUpon></Compile>
+    <Compile Include="Controladores\TListaCarretera.cs" />
+    <Compile Include="Controladores\TListaCategoria.cs" />
+    <Compile Include="Controladores\TListaComuna.cs" />
+    <Compile Include="Controladores\TListaComunaRecorrida.cs" />
+    <Compile Include="Controladores\TListaExtremoCarretera.cs" />
+    <Compile Include="Controladores\TListaTramo.cs" />
+    <Compile Include="Entidades\Carretera.cs" />
+    <Compile Include="Entidades\Categoria.cs" />
+    <Compile Include="Entidades\Comuna.cs" />
+    <Compile Include="Entidades\ComunaRecorrida.cs" />
+    <Compile Include="Entidades\ExtremoCarretera.cs" />
+    <Compile Include="Entidades\Tramo.cs" />
+    <Compile Include="Formularios\frmAdminCarretera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAdminCarretera.Designer.cs">
+      <DependentUpon>frmAdminCarretera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmadminCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmadminCategoria.Designer.cs">
+      <DependentUpon>frmadminCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmAdminComuna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAdminComuna.Designer.cs">
+      <DependentUpon>frmAdminComuna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmAdminComunaRecorrida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAdminComunaRecorrida.Designer.cs">
+      <DependentUpon>frmAdminComunaRecorrida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmAdminExtremo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAdminExtremo.Designer.cs">
+      <DependentUpon>frmAdminExtremo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmAdminTramo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAdminTramo.Designer.cs">
+      <DependentUpon>frmAdminTramo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmCarretera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmCarretera.Designer.cs">
+      <DependentUpon>frmCarretera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmCategoria.Designer.cs">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmComuna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmComuna.Designer.cs">
+      <DependentUpon>frmComuna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmComunaRecorrida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmComunaRecorrida.Designer.cs">
+      <DependentUpon>frmComunaRecorrida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmExtremo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmExtremo.Designer.cs">
+      <DependentUpon>frmExtremo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmTramo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmTramo.Designer.cs">
+      <DependentUpon>frmTramo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\frmAdminCarretera.resx">
+      <DependentUpon>frmAdminCarretera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmadminCategoria.resx">
+      <DependentUpon>frmadminCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAdminComuna.resx">
+      <DependentUpon>frmAdminComuna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAdminComunaRecorrida.resx">
+      <DependentUpon>frmAdminComunaRecorrida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAdminExtremo.resx">
+      <DependentUpon>frmAdminExtremo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAdminTramo.resx">
+      <DependentUpon>frmAdminTramo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmCarretera.resx">
+      <DependentUpon>frmCarretera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmCategoria.resx">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmComuna.resx">
+      <DependentUpon>frmComuna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmComunaRecorrida.resx">
+      <DependentUpon>frmComunaRecorrida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmExtremo.resx">
+      <DependentUpon>frmExtremo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmTramo.resx">
+      <DependentUpon>frmTramo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
