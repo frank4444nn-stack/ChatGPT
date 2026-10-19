@@ -1,8 +1,8 @@
 $ErrorActionPreference = 'Stop'
 $raiz = Split-Path $PSScriptRoot -Parent
-$solucion = Join-Path $raiz 'SistemaCarreteras.sln'
+$proyecto = Join-Path $raiz 'SistemaCarreteras\SistemaCarreteras.csproj'
 # Ejecutar desde Developer PowerShell para Visual Studio.
-& msbuild $solucion /t:Build /p:Configuration=Debug /nologo
+& msbuild $proyecto /t:Build /p:Configuration=Debug /nologo
 if ($LASTEXITCODE -ne 0) { throw 'Falló la compilación de la solución.' }
 $csc = Join-Path $env:WINDIR 'Microsoft.NET\Framework64\v4.0.30319\csc.exe'
 if (!(Test-Path $csc)) { $csc = Join-Path $env:WINDIR 'Microsoft.NET\Framework\v4.0.30319\csc.exe' }

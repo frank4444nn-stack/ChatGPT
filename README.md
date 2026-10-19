@@ -14,7 +14,7 @@ Para descargar un documento individual, ábrelo y pulsa **Download raw file**.
 ## Ejecutar
 
 1. Descomprime la descarga.
-2. Abre `SistemaCarreteras/SistemaCarreteras.sln` en Visual Studio 2022.
+2. Abre `SistemaCarreteras/SistemaCarreteras.slnx` en Visual Studio compatible con este formato.
 3. Instala Desarrollo de escritorio de .NET y el Developer Pack de .NET Framework 4.7.2 si hace falta.
 4. Compila y pulsa F5.
 

@@ -2,7 +2,7 @@ SISTEMA DE GESTIÓN DE CARRETERAS — PROYECTO COMPLETADO
 
 ABRIR Y EJECUTAR
 1. Descomprimir todo el ZIP.
-2. Abrir SistemaCarreteras.sln en Visual Studio 2022.
+2. Abrir SistemaCarreteras.slnx en tu Visual Studio compatible con este formato.
 3. Instalar la carga de trabajo Desarrollo de escritorio de .NET y el
    Developer Pack/Targeting Pack de .NET Framework 4.7.2 si Visual Studio lo pide.
 4. Seleccionar SistemaCarreteras como proyecto de inicio y pulsar F5.
